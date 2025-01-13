@@ -106,6 +106,17 @@ section {
   opacity: 0.8;
   transition: all 0.2s ease-in-out;
 }
+#topBar .logo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: rgba(255, 255, 255, 0.3);
+  filter: blur(20px);
+}
 #topBar .logo button {
   background-color: transparent;
   border: none;
@@ -114,8 +125,7 @@ section {
 #topBar .logo img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #topBar .logo.show {
   opacity: 0.8;
@@ -260,8 +270,7 @@ section {
   left: -5%;
   width: 140%;
   height: 100vh;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   z-index: 2;
 }
 #banner .bannerImg {
@@ -270,16 +279,14 @@ section {
   left: 0%;
   width: 130%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #banner .banner2Img {
   position: absolute;
   width: 130%;
   top: 25%;
   left: -10%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #banner h1 {
   color: #FFFFFF;
@@ -321,8 +328,7 @@ section {
   transform: translate(-50%, -50%) rotate(90deg);
   width: 100vh;
   height: 165%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #first-title h3,
 #second-title h3,
@@ -379,10 +385,8 @@ section {
   position: absolute;
   top: 30%;
   width: 100%;
-  height: -moz-fit-content;
   height: fit-content;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transform: rotateY(180deg);
 }
 #first-content .box1 .textSet {
@@ -412,8 +416,7 @@ section {
   top: 15%;
   left: -20%;
   width: 125%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #first-content .box1 .content-text {
   color: #FFFFFF;
@@ -512,10 +515,8 @@ section {
   top: 20%;
   left: 35%;
   width: 45%;
-  height: -moz-fit-content;
   height: fit-content;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #first-content .box2 .imgSet a {
   position: absolute;
@@ -551,8 +552,7 @@ section {
   top: 15%;
   right: -20%;
   width: 125%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transform: rotateY(180deg);
 }
 #first-content .box2 .content-text {
@@ -655,10 +655,8 @@ section {
   top: 30%;
   left: -20%;
   width: 95%;
-  height: -moz-fit-content;
   height: fit-content;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transform: rotateY(180deg);
 }
 #first-content .box3 .textSet {
@@ -688,8 +686,7 @@ section {
   top: 15%;
   left: -20%;
   width: 125%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #first-content .box3 .content-text {
   color: #FFFFFF;
@@ -770,10 +767,8 @@ section {
   top: 10%;
   left: 5%;
   width: 20%;
-  height: -moz-fit-content;
   height: fit-content;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transform: rotate(-5deg);
   border: #FFFFFF solid 10px;
   border-radius: 10px;
@@ -783,10 +778,8 @@ section {
   bottom: 5%;
   left: 5%;
   width: 23%;
-  height: -moz-fit-content;
   height: fit-content;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transform: rotateY(180deg);
   border: #FFFFFF solid 10px;
   border-radius: 10px;
@@ -796,10 +789,8 @@ section {
   top: 15%;
   right: 5%;
   width: 20%;
-  height: -moz-fit-content;
   height: fit-content;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transform: rotate(5deg);
   border: #FFFFFF solid 10px;
   border-radius: 10px;
@@ -809,10 +800,8 @@ section {
   bottom: 8%;
   right: 5%;
   width: 50%;
-  height: -moz-fit-content;
   height: fit-content;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 #second-content {
@@ -918,134 +907,190 @@ section {
   margin-top: 2%;
   width: 35%;
 }
-#second-content .imgSet1 {
+#second-content .imgSet-1 {
   position: absolute;
   top: 5%;
   left: 1%;
   width: 30%;
   height: 90%;
 }
-#second-content .imgSet1 .imgSet1-1 {
+#second-content .imgSet-1 .imgSet-1-1 {
   position: absolute;
   top: 0;
   right: 0;
   width: 60%;
 }
-#second-content .imgSet1 .imgSet1-1 a {
+#second-content .imgSet-1 .imgSet-1-1 a {
   position: absolute;
-  bottom: 0;
-  right: 20%;
+  bottom: 10%;
+  right: 30%;
   z-index: 10;
   color: #D9D9D9;
 }
-#second-content .imgSet1 .imgSet1-1 img {
-  -webkit-clip-path: circle(30% at 50% 50%);
-          clip-path: circle(30% at 50% 50%);
+#second-content .imgSet-1 .imgSet-1-1 img {
+  clip-path: circle(30% at 40% 40%);
+  transition: all 0.4s ease;
+  cursor: pointer;
 }
-#second-content .imgSet1 .imgSet1-2 {
+#second-content .imgSet-1 .imgSet-1-1:hover img {
+  transform: scale(1.2);
+}
+#second-content .imgSet-1 .imgSet-1-1.active img {
+  transform: scale(1.2);
+}
+#second-content .imgSet-1 .imgSet-1-2 {
   position: absolute;
   top: 20%;
   left: 0;
   width: 60%;
 }
-#second-content .imgSet1 .imgSet1-2 a {
+#second-content .imgSet-1 .imgSet-1-2 a {
   position: absolute;
   bottom: 0;
   right: 20%;
   z-index: 10;
   color: #D9D9D9;
 }
-#second-content .imgSet1 .imgSet1-2 img {
-  -webkit-clip-path: circle(30% at 50% 50%);
-          clip-path: circle(30% at 50% 50%);
+#second-content .imgSet-1 .imgSet-1-2 img {
+  clip-path: circle(30% at 50% 50%);
+  transition: all 0.4s ease;
+  cursor: pointer;
 }
-#second-content .imgSet1 .imgSet1-3 {
+#second-content .imgSet-1 .imgSet-1-2:hover img {
+  transform: scale(1.2);
+}
+#second-content .imgSet-1 .imgSet-1-2.active img {
+  transform: scale(1.2);
+}
+#second-content .imgSet-1 .imgSet-1-3 {
   position: absolute;
   top: 40%;
   right: 0;
   width: 60%;
 }
-#second-content .imgSet1 .imgSet1-3 a {
+#second-content .imgSet-1 .imgSet-1-3 a {
   position: absolute;
   bottom: 0;
   right: 20%;
   z-index: 10;
   color: #D9D9D9;
 }
-#second-content .imgSet1 .imgSet1-3 img {
-  -webkit-clip-path: circle(30% at 50% 50%);
-          clip-path: circle(30% at 50% 50%);
+#second-content .imgSet-1 .imgSet-1-3 img {
+  clip-path: circle(30% at 50% 50%);
+  transition: all 0.4s ease;
+  cursor: pointer;
 }
-#second-content .imgSet1 .imgSet1-4 {
+#second-content .imgSet-1 .imgSet-1-3:hover img {
+  transform: scale(1.2);
+}
+#second-content .imgSet-1 .imgSet-1-3.active img {
+  transform: scale(1.2);
+}
+#second-content .imgSet-1 .imgSet-1-4 {
   position: absolute;
   top: 60%;
   left: 0;
-  width: 60%;
+  width: 50%;
 }
-#second-content .imgSet1 .imgSet1-4 img {
-  -webkit-clip-path: circle(30% at 50% 50%);
-          clip-path: circle(30% at 50% 50%);
+#second-content .imgSet-1 .imgSet-1-4 img {
+  clip-path: circle(30% at 50% 50%);
+  transition: all 0.4s ease;
+  cursor: pointer;
 }
-#second-content .imgSet2 {
+#second-content .imgSet-1 .imgSet-1-4:hover img {
+  transform: scale(1.2);
+}
+#second-content .imgSet-1 .imgSet-1-4.active img {
+  transform: scale(1.2);
+}
+#second-content .imgSet-2 {
   position: absolute;
   top: 5%;
   right: 1%;
   width: 30%;
   height: 90%;
 }
-#second-content .imgSet2 .imgSet2-1 {
+#second-content .imgSet-2 .imgSet-2-1 {
   position: absolute;
   top: 0%;
-  left: 0;
+  left: -10%;
   width: 60%;
 }
-#second-content .imgSet2 .imgSet2-1 a {
+#second-content .imgSet-2 .imgSet-2-1 a {
   position: absolute;
-  bottom: 20%;
-  right: 20%;
+  bottom: 30%;
+  right: 0%;
   z-index: 10;
   color: #D9D9D9;
 }
-#second-content .imgSet2 .imgSet2-1 img {
-  -webkit-clip-path: circle(25% at 50% 50%);
-          clip-path: circle(25% at 50% 50%);
+#second-content .imgSet-2 .imgSet-2-1 img {
+  clip-path: circle(25% at 70% 40%);
+  transition: all 0.4s ease;
+  cursor: pointer;
 }
-#second-content .imgSet2 .imgSet2-2 {
+#second-content .imgSet-2 .imgSet-2-1:hover img {
+  transform: scale(1.2);
+}
+#second-content .imgSet-2 .imgSet-2-1.active img {
+  transform: scale(1.2);
+}
+#second-content .imgSet-2 .imgSet-2-2 {
   position: absolute;
-  top: 20%;
+  top: 25%;
   right: 0;
   width: 60%;
 }
-#second-content .imgSet2 .imgSet2-2 img {
-  -webkit-clip-path: circle(25% at 50% 50%);
-          clip-path: circle(25% at 50% 50%);
+#second-content .imgSet-2 .imgSet-2-2 img {
+  clip-path: circle(25% at 50% 40%);
+  transition: all 0.4s ease;
+  cursor: pointer;
 }
-#second-content .imgSet2 .imgSet2-3 {
+#second-content .imgSet-2 .imgSet-2-2:hover img {
+  transform: scale(1.2);
+}
+#second-content .imgSet-2 .imgSet-2-2.active img {
+  transform: scale(1.2);
+}
+#second-content .imgSet-2 .imgSet-2-3 {
   position: absolute;
   top: 40%;
   left: 0;
   width: 60%;
 }
-#second-content .imgSet2 .imgSet2-3 img {
-  -webkit-clip-path: circle(25% at 50% 50%);
-          clip-path: circle(25% at 50% 50%);
+#second-content .imgSet-2 .imgSet-2-3 img {
+  clip-path: circle(25% at 60% 40%);
+  transition: all 0.4s ease;
+  cursor: pointer;
 }
-#second-content .imgSet2 .imgSet2-4 {
+#second-content .imgSet-2 .imgSet-2-3:hover img {
+  transform: scale(1.2);
+}
+#second-content .imgSet-2 .imgSet-2-3.active img {
+  transform: scale(1.2);
+}
+#second-content .imgSet-2 .imgSet-2-4 {
   position: absolute;
   top: 60%;
   right: 0;
   width: 60%;
 }
-#second-content .imgSet2 .imgSet2-4 a {
+#second-content .imgSet-2 .imgSet-2-4 a {
   position: absolute;
-  bottom: 20%;
+  bottom: 0%;
   right: 20%;
   z-index: 10;
   color: #D9D9D9;
 }
-#second-content .imgSet2 .imgSet2-4 img {
-  -webkit-clip-path: circle(25% at 50% 50%);
-          clip-path: circle(25% at 50% 50%);
+#second-content .imgSet-2 .imgSet-2-4 img {
+  clip-path: circle(30% at 50% 50%);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+#second-content .imgSet-2 .imgSet-2-4:hover img {
+  transform: scale(1.2);
+}
+#second-content .imgSet-2 .imgSet-2-4.active img {
+  transform: scale(1.2);
 }
 
 #second-summary {
@@ -1067,30 +1112,24 @@ section {
   top: 5%;
   left: 0;
   width: 30%;
-  height: -moz-fit-content;
   height: fit-content;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #second-summary .second-summary-img-2 {
   position: absolute;
   bottom: 5%;
   left: 0;
   width: 25%;
-  height: -moz-fit-content;
   height: fit-content;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #second-summary .second-summary-img-3 {
   position: absolute;
   bottom: -1%;
   right: -1%;
   width: 60%;
-  height: -moz-fit-content;
   height: fit-content;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 #third-content {
@@ -1475,50 +1514,40 @@ section {
   top: 5%;
   left: 0;
   width: 20%;
-  height: -moz-fit-content;
   height: fit-content;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #third-summary .third-summary-img-2 {
   position: absolute;
   bottom: 3%;
   left: 5%;
   width: 20%;
-  height: -moz-fit-content;
   height: fit-content;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #third-summary .third-summary-img-3 {
   position: absolute;
   top: 3%;
   right: 0;
   width: 25%;
-  height: -moz-fit-content;
   height: fit-content;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #third-summary .third-summary-img-4 {
   position: absolute;
   bottom: 15%;
   right: 1%;
   width: 20%;
-  height: -moz-fit-content;
   height: fit-content;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #third-summary .third-summary-img-5 {
   position: absolute;
   bottom: 3%;
   right: 18%;
   width: 20%;
-  height: -moz-fit-content;
   height: fit-content;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 #last-content-1 {
@@ -1555,20 +1584,16 @@ section {
   bottom: 5%;
   left: 5%;
   width: 25%;
-  height: -moz-fit-content;
   height: fit-content;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #last-content-1 .last-content-1-img-2 {
   position: absolute;
   bottom: 2%;
   right: -1%;
   width: 50%;
-  height: -moz-fit-content;
   height: fit-content;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 #last-content-2 {
@@ -1595,10 +1620,8 @@ section {
 }
 #last-content-2 .imgSet1 img {
   width: 80%;
-  height: -moz-fit-content;
   height: fit-content;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border: #FFFFFF solid 3px;
   border-radius: 10px;
 }
@@ -1622,10 +1645,8 @@ section {
 }
 #last-content-2 .imgSet2 img {
   width: 80%;
-  height: -moz-fit-content;
   height: fit-content;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border: #FFFFFF solid 3px;
   border-radius: 10px;
 }
@@ -1648,10 +1669,8 @@ section {
 }
 #last-content-2 .imgSet3 img {
   width: 80%;
-  height: -moz-fit-content;
   height: fit-content;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border: #FFFFFF solid 3px;
   border-radius: 10px;
 }
@@ -1694,30 +1713,24 @@ section {
   bottom: 5%;
   left: -1%;
   width: 30%;
-  height: -moz-fit-content;
   height: fit-content;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #last-summary .last-summary-img-2 {
   position: absolute;
   top: 5%;
   right: 5%;
   width: 25%;
-  height: -moz-fit-content;
   height: fit-content;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #last-summary .last-summary-img-3 {
   position: absolute;
   bottom: 5%;
   right: 0%;
   width: 30%;
-  height: -moz-fit-content;
   height: fit-content;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 footer {
